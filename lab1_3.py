@@ -1,3 +1,5 @@
+#Задача 3: Разложение Холецкого
+
 import numpy as np
 from math import sqrt
 

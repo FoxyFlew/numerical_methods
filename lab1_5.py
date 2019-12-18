@@ -1,3 +1,5 @@
+#Задача 5: Метод Зейделя
+
 import numpy as np
 
 def Metod(A, B, eps):
