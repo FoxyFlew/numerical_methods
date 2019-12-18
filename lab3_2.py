@@ -1,3 +1,5 @@
+#Задача 2: Метод секущих
+
 import math
 import random
 

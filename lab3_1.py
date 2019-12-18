@@ -1,3 +1,5 @@
+#Задача 1: Метод бисекций
+
 import math
 import random
 
