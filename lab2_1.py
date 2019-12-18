@@ -1,11 +1,11 @@
 import numpy as np
 
-def generate_matrix(n):
+def Matrix(n):
     aij = lambda i, j: 1 / (i + j - 1)
     arr = [[aij(i + 1, j + 1) for i in range(n)] for j in range(n)]
     return np.array(arr)
 
-def power_method(A):
+def Method(A):
     q = [1] * A.shape[0]
     q /= np.linalg.norm(q)
     while True:
@@ -18,7 +18,7 @@ def power_method(A):
 
 for n in range(2, 11):
     print("n =", n)
-    H = generate_matrix(n)
+    H = Matrix(n)
     print(H)
-    l, v = power_method(H)
-    print("max(abs(eigenvalue)) =", l, "\neigenvector =", v)
+    l, v = Method(H)
+    print("max value", l, "vector", v)
